@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.login-container {
+    height: 100%;
+}
+
+.loginBtn {
+    margin-right: 20px;
+}
+
+.login {
+    min-width: 350px;
+    width: 30% !important;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text],
+.input-field input[type=password] {
+    color: #000;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+/*
+    border-bottom: 1px solid #000;
+ box-shadow: 0 1px 0 0 #000;
+*/
+}

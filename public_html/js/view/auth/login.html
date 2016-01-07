@@ -1,0 +1,32 @@
+<div class="login-container red">
+    <div class="valign-wrapper" style="height:100%">
+        <div class="container login">
+            <div class="card white">
+                <form name="myForm" ng-submit="loginBtn(myForm.$valid)" novalidate>
+                    <div class="card-content white-text">
+                        <span class="card-title grey-text text-darken-4">User Login</span>
+
+                        <div class="input-field">
+                            <input id="username" name="name" type="text" class="validate" floating-label="Username" ng-model="name" required/>
+
+                        </div>
+                        <div class="input-field">
+                            <input id="password" type="password" class="validate" ng-model="password" floating-label="Password" required />
+                        </div>
+                        <div ng-show="error" class="red-text">
+                            Fail to Authenticate!! Check your username and password
+                        </div>
+
+                    </div>
+                    <div class="card-action ">
+                        <button type="submit" class="waves-effect waves-light green btn white-text" ng-disabled="myForm.$invalid"> Login
+                            <i class="material-icons right">vpn_key</i>
+                        </button>
+                        <button class="red-text waves-effect text-darken-2 btn-flat" style="background-color: rgba(0,0,0,0);" href="#">forgot password ?</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
